@@ -103,13 +103,13 @@ Follow the following steps to get development environment running.
 * Clone _'MERN-BUS-APP.git'_ repository from GitHub
 
   ```bash
-  git clone https://github.com/AdityaKumawat97/MERN-BUS-APP.git
+  git clone https://github.com/Pragallath28/BRS-Mern-Stack.git
   ```
 
    _OR USING SSH_
 
   ```bash
-  git clone git@github.com:AdityaKumawat97/MERN-BUS-APP.git
+  git clone git@github.com:Pragallath28/BRS-Mern-Stack.git
   ```
 
 * Install node modules
