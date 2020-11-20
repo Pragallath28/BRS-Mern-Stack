@@ -1,5 +1,4 @@
 # MERN-BUS-APP
-## MFRP (My First Real Project) assigned by Cognizant during Internship
 
 A Bus ticket booking application made using MERN Stack (MongoDB, Express js, React js, Node js)
 
@@ -138,6 +137,7 @@ Follow the following steps to get development environment running.
   cd backend
   npm run devStart
   ```
+
 
 
 ---
