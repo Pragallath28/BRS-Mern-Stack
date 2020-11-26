@@ -27,7 +27,6 @@ export default function Signup({ history }) {
             }
         }
     }
-    
     // sign in
     const getToSignIn = e => {
         e.preventDefault()
