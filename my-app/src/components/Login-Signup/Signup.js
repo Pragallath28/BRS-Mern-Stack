@@ -8,24 +8,25 @@ export default function Signup({ history }) {
     const handleChangeEvent = (e, field) => {
         let fieldValue = e.target.value
         setnewUser({ ...newUser, [field]: fieldValue })
-        // if (field === 'email') {
-        //     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        //     if (fieldValue.match(mailformat)) {
-        //         setnewUser({ ...newUser, [field]: fieldValue })
-        //         return true
-        //     } else {
-        //         alert("You have entered an invalid email address!");
-        //         return false
-        //     }
-        // } else if (field === 'password') {
-        //     var passwordFormat = /^[A-Za-z]\w{7,14}$/;
-        //     if (fieldValue.match(passwordFormat)) {
-        //         setnewUser({ ...newUser, [field]: fieldValue })
-        //         return true
-        //     }else{
-        //         alert("Input Password and Submit [7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter]")
-        //     }
+        if (field === 'email') {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (fieldValue.match(mailformat)) {
+                setnewUser({ ...newUser, [field]: fieldValue })
+                return true
+            } else {
+                alert("You have entered an invalid email address!");
+                return false
+            }
+        } else if (field === 'password') {
+            var passwordFormat = /^[A-Za-z]\w{7,14}$/;
+            if (fieldValue.match(passwordFormat)) {
+                setnewUser({ ...newUser, [field]: fieldValue })
+                return true
+            }else{
+                alert("Input Password and Submit [7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter]")
+            }
         }
+    }
     
     // sign in
     const getToSignIn = e => {
