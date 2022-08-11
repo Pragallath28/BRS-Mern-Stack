@@ -9,7 +9,7 @@ export default function Signup({ history }) {
         let fieldValue = e.target.value
         setnewUser({ ...newUser, [field]: fieldValue })
         if (field === 'email') {
-            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            const mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
             if (fieldValue.match(mailformat)) {
                 setnewUser({ ...newUser, [field]: fieldValue })
                 return true
@@ -18,7 +18,7 @@ export default function Signup({ history }) {
                 return false
             }
         } else if (field === 'password') {
-            var passwordFormat = /^[A-Za-z]\w{7,14}$/;
+            const passwordFormat = /^[A-Za-z]\w{7,14}$/;
             if (fieldValue.match(passwordFormat)) {
                 setnewUser({ ...newUser, [field]: fieldValue })
                 return true
